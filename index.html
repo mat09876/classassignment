@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
 	<head>
 		<link rel = stylesheet type = "text/css" href = "index.css">
@@ -8,18 +7,27 @@
 <body>
 	
 	<header>
-	
+		<img src="images/header.jpg" alt = "Guinness Storehouse header"/>
 	</header>
-
-	
-	<nav>
-			<a href="index.html">Welcome Page</a>
-			<a href="history.html">History</a>
-			<a href="photos.html">Photo's</a>
-			<a href="location.html">Location</a>
-			<a href="contactinfo.html">Contact Info</a>
-			<a href="aboutus.html">About Us</a>
-	</nav>
+		<nav class = "white">
+			<map name="gate" id="gate"> 
+				<area href="contactinfo.html" shape="rect" coords="1089,190,1253,225" alt="Contact Info Page">
+				<area href="history.html" shape="rect" coords="289,107,378,141" alt="History Page">
+				<area href="photos.html" shape="rect" coords="93,352,184,388" alt="Photo's Page">
+				<area href="aboutus.html" shape="rect" coords="1326,533,1448,566" alt="About Us Page">
+				<area href="location.html" shape="rect" coords="740,443,868,472" alt="Location Page">
+			</map>
+			
+		</nav>
+		
+		<div class = "welcome">
+			<h3> Welcome to Our Home Page!</h3>
+			<p>
+			Please click on a link on the picture.
+			</p>
+		</div>
+		
+		<img class = "center" src="images/welcomegate.jpg" alt="Welcome Gate" usemap="#gate"/>
 
 	
 	
