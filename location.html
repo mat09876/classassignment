@@ -21,6 +21,25 @@
 			<a href="aboutus.html">About Us</a>
 	</nav>
 
+	<div id="map" style="width:400px;height:400px">
+		</div>
+		
+		<script>
+			
+			function myMap() {
+				var myCenter = new google.maps.LatLng(53.3418530, -6.2865610);
+				var mapCanvas = document.getElementById("map");
+				var mapOptions = {center: myCenter, zoom: 10};
+				var map = new google.maps.Map(mapCanvas, mapOptions);
+				var marker = new google.maps.Marker({position:myCenter, animation:google.maps.Animation.BOUNCE});
+				marker.setMap(map);
+			}
+		</script>
+	
+	
+	
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx2qM8LdXwi0l0I74BZ1Wwkq53i9-2f_k&callback=myMap">
+		</script>
 	
 	
 	<footer>
