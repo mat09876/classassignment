@@ -20,51 +20,71 @@
 			<a href="contactinfo.html">Contact Info</a>
 			<a href="aboutus.html">About Us</a>
 	</nav>
-
-	<div class="gallery">
-		<a target="_blank" href="images/guinessgate.jpg">
-		<img src="images/guinnessgate.jpg" alt="Guinness Front Gate" width="300" height="200">
-		</a>
-		<div class="desc">Guinness Front Gate</div>
-	</div>
-
-	<div class="gallery">
-		<a target="_blank" href="images/pint.jpg">
-		<img src="images/pint.jpg" alt="Pint of Guinness" width="600" height="400">
-		</a>
-		<div class="desc"> Perfect Pint of Guinness</div>
-	</div>
+<!-- Selams Photo Gallery -->
 	
-	<div class="gallery">
-		<a target="_blank" href="images/gravitybar.jpg">
-		<img src="images/gravitybar.jpg" alt="Gravity Bar" width="300" height="200">
-		</a>
-		<div class="desc">Gravity Bar</div>
-	</div>
-
-	<div class="gallery">
-		<a target="_blank" href="images/inside.jpg">
-		<img src="images/inside.jpg" alt="Inside the Guinness Storehouse" width="600" height="400">
-		</a>
-		<div class="desc">Inside the Guinness Storehouse</div>
-	</div>
+	<p>The Photo Gallery</p>
 	
-	<div class="gallery">
-		<a target="_blank" href="images/guinnessfront.jpg">
-		<img src="images/guinnessfront.jpg" alt="Guinness Storehouse Front" width="300" height="200">
-		</a>
-		<div class="desc">Guinness Storehouse Front</div>
+	<div id= "container">
+
+		<img class="slides" src="images/1.jpg" />
+		<img class="slides" src="images/2.jpg"/>
+		<img class="slides" src="images/3.jpg"/>
+		<img class="slides" src="images/4.jpg"/>
+		<img class="slides" src="images/5.jpg"/>
+		<img class="slides" src="images/6.jpg"/>
+		<img class="slides" src="images/fact1.jpg"/>
+		<img class="slides" src="images/gravitybar.jpg"/>
+		<img class="slides" src="images/guinnessfront.jpg"/>
+		<img class="slides" src="images/guinnessgate.jpg"/>
+		<img class="slides" src="images/inside.jpg"/>
+		<img class="slides" src="images/pint.jpg"/>
+
+		<button class="btn" onclick="plusIndex(-1)" id="btn1"> &#10094;</button>
+		<button class="btn" onclick="plusIndex(1)" id="btn2"> &#10095;</button>
 	</div>
 
-	<div class="gallery">
-		<a target="_blank" href="images/fact1.jpg">
-		<img src="images/fact1.jpg" alt="Fun Fact" width="600" height="400">
-		</a>
-		<div class="desc">Fun Fact</div>
-	</div>
+	<footer><p> Katie,Mathew and Selam</p>
+	</footer>
+</body>
+
+	<script>
+		var index=1;
+		function plusIndex(n){
+		index = index + n;
+		showImage(index);
+		}
+		
+		showImage(1);
+		
+		function showImage(n){var i;
+		var x= document.getElementsByClassName("slides");
+		if (n> x.length){index = 1};
+		if (n<1){index = x.length};
+
+		for(i=0; i<x.length;i++){
+			x[i].style.display="none";
+			}
+ 
+		x[index-1].style.display="block";
+		}
+		
+		autoSlides();
+		function autoSlides(){ var i;
+		var x= document.getElementsByClassName("slides");
+		
+		for(i=0; i<x.length;i++){
+			x[i].style.display="none";
+			}
+ 
+		if(index > x.length){index=1}
+			x[index-1].style.display="block";
+			index++; 
+			setTimeout(autoSlides,2000);
+		}
+</script>
+
 	
 	<footer>
 		
 	</footer>
-</body>
 </html>	
