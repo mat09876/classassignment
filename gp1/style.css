@@ -1,0 +1,451 @@
+/*-------------
+ 	General / mainly page one style 
+-------------*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*this allows the picture to cover the whole screen*/
+}
+
+html{
+	font: normal 16px sans-serif;
+	color: #555; /*this for the nav bar*/
+}
+
+ul, nav{
+	list-style: none; /*this take off the dot on the list */
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	opacity: 0.9; /*this is the styling on the links*/
+}
+
+a:hover{
+	opacity: 1; /*this is the styling on the links*/
+}
+
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 100px; /*this keeps the text central*/
+}
+
+@media (max-width: 1000px){
+
+	section{
+		padding: 100px 50px; /*chanegs the padding for chagin the web size*/
+	}
+
+}
+
+@media (max-width: 600px){/*chanegs the padding for chagin the web size*/
+
+	section{
+		padding: 80px 30px;
+	}
+
+}
+
+
+/*-------------
+ 	Header
+-------------*/
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	padding: 35px 35% ; /*nav bar styling*/
+}
+
+
+
+header nav{
+	display: flex; /*displays the nav going across*/
+}
+
+header nav li{
+	margin: 0 15px; /*spacing for nav bar*/
+}
+
+
+@media (max-width: 1000px){
+	header{
+		padding: 20px 50px;/*chanegs the padding for chagin the web size*/
+	}
+}
+
+
+@media (max-width: 700px){
+	header{
+		flex-direction: column;		/*chanegs the padding for chagin the web size*/
+	}
+
+	header h2{
+		margin-bottom: 15px;/*chanegs the padding for chagin the web size*/
+	}
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+Try it Yourself »
+
+
+/*----------------
+ 	generic Section
+----------------*/
+
+.generic{
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color: #fff;
+	text-align: center; /*chanegs the padding for chagin the web size*/
+}
+
+.generic .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #2196F3;
+	z-index: -1; /*chanegs the padding for chagin the web size*/
+}
+
+.generic .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #414a4f;
+	opacity: 0.75; /*changes color of image to fit my arker styled images*/
+}
+
+.generic h1{
+	font: bold 60px 'Open Sans', sans-serif;
+	margin-bottom: 15px; /* font size for h1 */
+}
+
+.generic h3{
+	font: normal 28px 'Open Sans', sans-serif;
+	margin-bottom: 40px; /* font size for h3 */
+}
+
+.footer {
+ position: fixed;
+ bottom: 0;
+ padding-bottom: 20px;
+ padding-left: 65%;
+
+} /* keep footer bottom right */
+
+.footer p {
+		text-transform: uppercase;
+	font-size: 14px;
+	color: rgba(255,255,255,0.6);
+	margin-bottom: 100px;
+}
+
+
+/*-------------
+bio styling
+-------------*/
+
+.genericbio{
+	position: relative;
+	min-height: 90vh;
+	color: #fff;
+	text-align: center;  /* changes color of text and keeps image full width */
+}
+
+.genericbio .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #2196F3;
+	z-index: -1; /*changes color of image to fit my arker styled images*/
+}
+
+.genericbio .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #414a4f;
+	opacity: 0.75; /*changes color of image to fit my arker styled images*/
+}
+
+.genericbio h1{
+	font: bold 50px 'Open Sans', sans-serif;
+	margin-bottom: 15px; /* changed font size image for bio page h1 */
+}
+
+
+.flexbox-containerbio {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	font-size: 20px; /* flex box styling to position the items corrdctly */
+}
+
+.flexbox-containerbio > div {
+	width: 50%;
+	padding: 10px; /* flex box styling to postion the width and padding */
+}
+
+.flexbox-containerbio > div:first-child {
+	margin-right: 20px; /* flex box styling to first child of the div with a margin right */
+}
+
+.bioimage {
+	width: 50%;
+	height: 500px; /* bio image width and height */
+}
+
+
+/*-------------
+tesla styling
+-------------*/
+
+
+.generictesla{
+	position: relative;
+	min-height: 100vh;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 60px; /* slighty modified from generic */
+}
+
+.generictesla .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #2196F3;
+	z-index: -1; /* slighty modified from generic */
+}
+
+.generictesla .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #414a4f;
+	opacity: 0.75; /* slighty modified from generic */
+}
+
+.generictesla h1{
+	font: bold 50px 'Open Sans', sans-serif;
+	margin-bottom: 15px;
+	color: #fff;
+} /*h1 heading text style and font */
+
+
+
+
+.nowrap  { 
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  color: #fff; /*first itme styling so keeps them two side by side */
+}
+
+.wrap    { 
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; /*second itme styling so keeps div centre */
+}  
+
+
+.teslaimage {	
+width: 100%;
+  height: 40%; /*styling for 1st image */
+}
+
+.tesla2image {
+	width: 80%;
+  height: 350px;
+  padding-left: 20%; /*styling for 2nd image */
+}
+
+.specialtext {
+	font: bold 40px 'Open Sans', sans-serif;
+	margin-bottom: 15px;
+	color: #fff; /*styling the big text on the right*/
+}
+
+
+/*-------------
+cameos styling
+-------------*/
+
+.cameostesla{
+	position: relative;
+	min-height: 100vh;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 200px; /* slighty modified from generic */
+}
+
+.cameostesla .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #2196F3;
+	z-index: -1; /* slighty modified from generic */
+}
+
+.cameostesla .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #414a4f;
+	opacity: 0.75; /* slighty modified from generic */
+}
+
+.cameostesla h1{
+	font: bold 50px 'Open Sans', sans-serif;
+	margin-bottom: 15px;
+	color: #fff; /* slighty modified from generic */
+}
+
+
+
+	.flex-container {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex; /*styling very similair to tesla page just small difference */
+}
+
+.nowrap  { 
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  color: #fff; /*styling very similair to tesla page just small difference */
+}
+
+
+.flex-item {
+  padding: 5px;
+  width: 100%;
+  height: 40%; /*styling very similair to tesla page just small difference */
+}
+
+
+
+/*-------------
+gallery styling
+-------------*/
+
+
+
+.gallery {
+  margin: auto;
+  width: 80%; /* make width for gallery to fit into */
+
+}
+
+.responsive-image {
+  max-width: 100%;
+   padding: 10px 10px 10px 10px; /*makes the images responsive */
+}
+
+.cell img {
+  display: block; /*makes the images display block*/
+}
+
+
+@media screen and (min-width: 600px) { /*makes images respovive for difference screen sizes*/
+  .grid {
+	
+    display:flex;
+    flex-wrap: wrap;
+	flex-direction: row;
+  }
+  .cell {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) { /*makes images respovive for difference screen sizes*/
+  .cell {
+    width: calc(100% / 4); /* how many pictures you want in a row*/
+  }
+}
+
+/*-------------
+links styling
+-------------*/
+
+.insta {
+	width: calc(100% / 3);   /* how many pictures you want in a row*/
+}

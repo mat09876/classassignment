@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guiness Storehouse Location</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<header>
+		<nav>
+			<li><a href="index.html">Welcome page</a></li>
+			<li><a href="history.html">History</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="location.html">Location</a></li>
+			<li><a href="contact.html">Contact Info</a></li>
+			<li><a href="about.html">About Us</a></li>
+		</nav>
+	</header>
+
+	<section class="cameostesla">
+		<div class="background-image" style="background-image: url(http://www.depreciationguru.com/wp-content/uploads/2016/03/6-Steps-to-the-Perfect-Pint.jpg);"></div>
+		<h1>Where Can You Find Us?</h1>
+		
+		
+		
+		<div class="flex-container nowrap">
+  		
+  		<div id="map" style="width:550px;height:500px;float:left;">
+		</div>
+		<script>
+			
+			function myMap() {
+				var myCenter = new google.maps.LatLng(53.3418530, -6.2865610);
+				var mapCanvas = document.getElementById("map");
+				var mapOptions = {center: myCenter, zoom: 10};
+				var map = new google.maps.Map(mapCanvas, mapOptions);
+				var marker = new google.maps.Marker({position:myCenter, animation:google.maps.Animation.BOUNCE});
+				marker.setMap(map);
+			}
+		</script>
+	
+		
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx2qM8LdXwi0l0I74BZ1Wwkq53i9-2f_k&callback=myMap">
+		</script>
+		
+  		<div class="flex-item"><h4>Opening Times:</h4> 
+			The Guinness Storehouse is open 7 days a week
+			9:30am - 7pm (last admission is at 5pm)
+	
+		<h5>Late Opening:</h5>
+			During July and August until 8pm
+			9am - 8pm (last admission is at 6pm)
+			
+		<h4>Call Us:</h4> 0870551656
+		
+		<h4>Email Us:</h4> <a href="mailto:katie.mcelroy@ymail.com">katie.mcelroy@ymail.com</a>
+	
+		<h4> Address: </h4>
+			GUINNESS STOREHOUSE,
+			ST JAMES'S GATE,  
+			DUBLIN 8, IRELAND
+		
+		</div>
+		</div>
+
+		<div class="footer">
+		Mathew Mc Donnell : MMCDONNELL@CARTARWLER.COM <br>
+		Katie Mc Elroy(2926904): katie.mcelroy@ymail.com <br>
+		Selam
+		</div>
+	</section>
+</body>
+
+
+
+</html>
