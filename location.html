@@ -1,69 +1,57 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<link rel = stylesheet type = "text/css" href = "index.css">
-		<meta charset="utf-8">
-		<title>Location</title>
-	</head>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guiness</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
 <body>
-	
+
 	<header>
-		<img src="images/header.jpg" alt = "Guinness Storehouse header"/>
+		<nav>
+			<li><a href="index.html">Welcome page</a></li>
+			<li><a href="history.html">History</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="location.html">location</a></li>
+			<li><a href="contact.html">Contact Info</a></li>
+			<li><a href="about.html">About Us</a></li>
+		</nav>
 	</header>
 
-	
-	<nav>
-			<a href="index.html">Welcom Page</a>
-			<a href="history.html">History</a>
-			<a href="photos.html">Photo's</a>
-			<a href="location.html">Location</a>
-			<a href="contactinfo.html">Contact Info</a>
-			<a href="aboutus.html">About Us</a>
-	</nav>
-		<!--Katie's Google Map-->
-		<div class = "contact">
-		<h4>Opening Times:</h4> 
-			The Guinness Storehouse® is open 7 days a week
-			9:30am - 7pm (last admission is at 5pm)
-	
-		<h5>Late Opening:</h5>
-			During July and August until 8pm
-			9am - 8pm (last admission is at 6pm)
-			
-		<h4>Call Us:</h4> 0870551656
+	<section class="cameostesla">
+		<div class="background-image" style="background-image: url(http://www.theamazingpics.com/wp-content/uploads/2014/03/Amazing-Picture-of-a-Lavender-Field-at-Sunset-By-Tomas-Vocelka.jpg);"></div>
+		<h1>Guiness</h1>
 		
-		<h4>Email Us:</h4> <a href="mailto:katie.mcelroy@ymail.com">katie.mcelroy@ymail.com</a>
-	
-		<h4> Address: </h4>
-			GUINNESS STOREHOUSE,
-			ST JAMES'S GATE,  
-			DUBLIN 8, IRELAND
-		
+		<div class="flex-container nowrap">
+  		<div class="flex-item"><img class="teslaimage" alt="elon-musk-cameos" src="http://www.theamazingpics.com/wp-content/uploads/2014/03/Amazing-Picture-of-a-Lavender-Field-at-Sunset-By-Tomas-Vocelka.jpg">
+  		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</div>
-		
-		<div id="map" style="width:550px;height:500px;margin:auto">
+  		<div class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</div>
-		
-		<script>
-			
-			function myMap() {
-				var myCenter = new google.maps.LatLng(53.3418530, -6.2865610);
-				var mapCanvas = document.getElementById("map");
-				var mapOptions = {center: myCenter, zoom: 10};
-				var map = new google.maps.Map(mapCanvas, mapOptions);
-				var marker = new google.maps.Marker({position:myCenter, animation:google.maps.Animation.BOUNCE});
-				marker.setMap(map);
-			}
-		</script>
-	
-	
-	
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx2qM8LdXwi0l0I74BZ1Wwkq53i9-2f_k&callback=myMap">
-		</script>
-	
-	
-	<footer>
-		
-	</footer>
+		</div>
+
+
+	</section>
 </body>
-</html>	
+
+
+
+</html>
